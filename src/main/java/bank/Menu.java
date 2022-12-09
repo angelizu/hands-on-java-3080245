@@ -63,6 +63,24 @@ public class Menu {
           account.deposit(amount);
           break;
 
+        case 2:
+          System.out.println("How much would you like to withdraw?");
+          amount = scanner.nextDouble();
+          account.withdraw(amount);
+          break;
+
+        case 3:
+          System.out.println("Current balance: " + account.getBalance());
+          break;
+        
+        case 4:
+          Authenticator.logout(customer);
+          System.out.println("Thanks for banking at Globe Bank International!");
+          break;
+
+        default:
+          System.out.println("Invalid option. Please try again");
+
       }
     }
   }
