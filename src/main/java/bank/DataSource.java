@@ -62,6 +62,11 @@ public static Account getAccount(int accountId) {
   return account;
 }
 
+public static void updateAccountBalance(int accountId, double balance) {
+  
+}
+
+
   public static void main(String[] args) {
     // connect();
     Customer customer = getCustomer("twest8o@friendfeed.com");
